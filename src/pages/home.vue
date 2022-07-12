@@ -16,7 +16,9 @@
           <div class="row">
             <div class="col-sm-4 p-2">
               <div class="w-100 ps-3 pe-3 bg-white mb-3">
-                <div class="w-100" style="height:200px;"></div>
+                <div class="w-100 scroller">
+                  <apexchart width="150%" type="bar" :options="options" :series="series"></apexchart>
+                </div>
                 <div class="row">
                   <div class="col-sm-4 p-2">
                     <div class="w-100 bg-orange text-center text-light">
@@ -262,7 +264,31 @@
   </div>
 </template>
 
-<script setup>
+<script>
 import navbar from '../components/navbar.vue'
 import sidebar from '../components/sidebar.vue'
+//import VueApexCharts from 'vue-apexcharts'
+
+export default {
+  data() {
+    return {
+      options: {
+        chart: {
+          id: 'vuechart-example'
+        },
+        xaxis: {
+          categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998]
+        }
+      },
+      series: [{
+        name: 'series-1',
+        data: [30, 40, 45, 50, 49, 60, 70, 91]
+      }]
+    }
+  },
+  components: {
+    navbar,
+    sidebar
+  }
+}
 </script>
