@@ -243,7 +243,7 @@
                 </table>
               </div>
               <div class="cleafix mt-3 mb-3">
-                <div class="col-sm-6 p-0"></div>
+                <div class="col-sm-6 p-1"></div>
                 <div class="col-sm-6 p-0">
                   <div class="w-100 p-3 bg-success-light">
                     <h6 class="text-sm">Top Donor Countries</h6>

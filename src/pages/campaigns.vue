@@ -295,7 +295,8 @@
                 </table>
               </div>
               <div class="cleafix mt-3">
-                <div class="col-sm-6 p-0 float-end">
+                <div class="col-sm-6 p-1"></div>
+                <div class="col-sm-6 p-0">
                   <div class="w-100 p-3 bg-success-light">
                     <h6 class="text-sm">Top Donor Countries</h6>
                     <b class="d-block"><img src="../../public/assets/images/Switzerland-icon.jpg" width="15" alt="Switzerland"> Switzerland</b>
