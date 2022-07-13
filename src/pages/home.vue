@@ -17,7 +17,7 @@
             <div class="col-sm-4 p-2">
               <div class="w-100 ps-3 pe-3 bg-white mb-3">
                 <div class="w-100 scroller">                  
-                  <apexchart width="120%" type="bar" :options="options" :series="series"></apexchart>
+                  <apexchart width="100%" type="bar" :options="options" :series="series"></apexchart>
                 </div>
                 <div class="row">
                   <div class="col-4 p-2">
