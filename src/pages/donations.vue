@@ -18,7 +18,7 @@
               <div class="w-100 ps-3 pe-3 bg-white mb-1">
                 <!-- STATISTICS CONTAINER -->
                 <div class="w-100 scroller">
-                  <apexchart width="150%" type="bar" :options="options" :series="series"></apexchart>
+                  <apexchart width="120%" type="bar" :options="options" :series="series"></apexchart>
                 </div>
               </div>
 

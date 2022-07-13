@@ -16,23 +16,23 @@
           <div class="row">
             <div class="col-sm-4 p-2">
               <div class="w-100 ps-3 pe-3 bg-white mb-3">
-                <div class="w-100 scroller">
-                  <apexchart width="150%" type="bar" :options="options" :series="series"></apexchart>
+                <div class="w-100 scroller">                  
+                  <apexchart width="120%" type="bar" :options="options" :series="series"></apexchart>
                 </div>
                 <div class="row">
-                  <div class="col-sm-4 p-2">
+                  <div class="col-4 p-2">
                     <div class="w-100 bg-orange text-center text-light">
                       <small style="font-size:12px;">Total Campaigns</small>
                       <h4>127,377</h4>
                     </div>
                   </div>
-                  <div class="col-sm-4 p-2">
+                  <div class="col-4 p-2">
                     <div class="w-100 bg-green text-center text-light">
                       <small style="font-size:12px;">Total Donations</small>
                       <h4>5,201</h4>
                     </div>
                   </div>
-                  <div class="col-sm-4 p-2">
+                  <div class="col-4 p-2">
                     <div class="w-100 bg-primary text-center text-light">
                       <small style="font-size:12px;">Total Withdrawal</small>
                       <h4>547</h4>
@@ -242,14 +242,15 @@
                   </tbody>
                 </table>
               </div>
-              <div class="cleafix mt-3">
-                <div class="col-sm-6 p-0 float-end">
+              <div class="cleafix mt-3 mb-3">
+                <div class="col-sm-6 p-0"></div>
+                <div class="col-sm-6 p-0">
                   <div class="w-100 p-3 bg-success-light">
                     <h6 class="text-sm">Top Donor Countries</h6>
-                    <b class="d-block">Switzerland</b>
-                    <b class="d-block">Russia</b>
-                    <b class="d-block">Brazil</b>
-                    <b class="d-block">Indonesia</b>
+                    <b class="d-block"><img src="../../public/assets/images/Switzerland-icon.jpg" width="15" alt="Switzerland"> Switzerland</b>
+                    <b class="d-block"><img src="../../public/assets/images/Russia-icon.png" width="15" alt="Russia"> Russia</b>
+                    <b class="d-block"><img src="../../public/assets/images/Brazil-icon.png" width="15" alt="Brazil"> Brazil</b>
+                    <b class="d-block"><img src="../../public/assets/images/Indonesia-icon.jpg" width="15" alt="Indonesia"> Indonesia</b>
                     <b class="d-block"><img src="../../public/assets/images/India-icon.jpg" width="15" alt="India"> India</b>
                     <b class="d-block"><img src="../../public/assets/images/Nigeria-icon.png" width="15" alt="Nigeria"> Nigeria</b>
                     <b class="d-block"><img src="../../public/assets/images/USA-icon.png" width="15" alt="USA"> USA</b>
@@ -267,7 +268,6 @@
 <script>
 import navbar from '../components/navbar.vue'
 import sidebar from '../components/sidebar.vue'
-//import VueApexCharts from 'vue-apexcharts'
 
 export default {
   data() {
