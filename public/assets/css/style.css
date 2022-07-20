@@ -1,170 +1,233 @@
 body {
-  background-color: #f6f8f9!important;
+    background-color: #f6f8f9!important;
 }
+
+
 /* COLORS */
-.bg-orange { background-color: #f2711c!important; }
-.text-orange { color: #f2711c!important; }
-.bg-green { background-color: #1ec638!important; }
-.text-green { color: #1ec638!important; }
-.bg-primary { background-color: #000c96!important; }
-.text-primary { color: #000c96!important; }
-.bg-success { background-color: #009688!important; }
-.text-success { color: #009688!important; }
-.bg-success-light { background-color: #b5eeea!important; }
-.bg-black { background-color: #000000!important; }
-.text-black { color: #000000!important; }
-.text-pale { color: #aaa!important; }
+
+.bg-orange {
+    background-color: #f2711c!important;
+}
+
+.text-orange {
+    color: #f2711c!important;
+}
+
+.bg-green {
+    background-color: #1ec638!important;
+}
+
+.text-green {
+    color: #1ec638!important;
+}
+
+.bg-primary {
+    background-color: #000c96!important;
+}
+
+.text-primary {
+    color: #000c96!important;
+}
+
+.bg-success {
+    background-color: #009688!important;
+}
+
+.text-success {
+    color: #009688!important;
+}
+
+.bg-success-light {
+    background-color: #b5eeea!important;
+}
+
+.bg-black {
+    background-color: #000000!important;
+}
+
+.text-black {
+    color: #000000!important;
+}
+
+.text-pale {
+    color: #aaa!important;
+}
+
 
 /* SCOLLBAR */
-.scroller {overflow:auto;}
-.scroller::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-}
-/* Track */
-.scroller::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 30px;
-}
-/* Handle */
-.scroller::-webkit-scrollbar-thumb {
-  background: rgb(207, 207, 207);
-  border-radius: 30px;
-}
-/* Handle on hover */
-.scroller::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+
+.scroller {
+    overflow: auto;
 }
 
+.scroller::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+
+/* Track */
+
+.scroller::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 30px;
+}
+
+
+/* Handle */
+
+.scroller::-webkit-scrollbar-thumb {
+    background: rgb(207, 207, 207);
+    border-radius: 30px;
+}
+
+
+/* Handle on hover */
+
+.scroller::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
 /* HELPERS */
-b {font-weight:500;}
-.bolder {font-weight:bold;}
-.text-sm {font-size: 14px;}
-.text-xs {font-size: 12px;}
-.campaigns thead th {border-top:none; border-bottom:1px solid #ccc!important;}
-.campaigns tbody td {border-top:none; border-bottom:none;}
+
+b {
+    font-weight: 500;
+}
+
+.bolder {
+    font-weight: bold;
+}
+
+.text-sm {
+    font-size: 14px;
+}
+
+.text-xs {
+    font-size: 12px;
+}
+
+.campaigns thead th {
+    border-top: none;
+    border-bottom: 1px solid #ccc!important;
+}
+
+.campaigns tbody td {
+    border-top: none;
+    border-bottom: none;
+}
+
 .img-30 {
-  margin-top: 5px;
-  width: 35px;
-  height: 35px;
-  float: left;
-  overflow: hidden;
+    margin-top: 5px;
+    width: 35px;
+    height: 35px;
+    float: left;
+    overflow: hidden;
 }
+
 .img-30-info {
-  float: left;
-  padding-left: 5px;
+    float: left;
+    padding-left: 5px;
 }
+
 .col-5 {
-  width: 20%;
-  padding: 7.5px;
-  float: left;
+    width: 20%;
+    padding: 7.5px;
+    float: left;
 }
 
 
 /* NAVBAR */
+
 .nav-search {
-  border-radius: 30px;
-  overflow: hidden;
-  background-color: #f6f8f9;
-  color: #555;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: #fff;
+    color: #555;
 }
-.nav-search > .input-group-text {
-  background-color: transparent!important;
-  border: none;
+
+.nav-search>.input-group-text {
+    background-color: transparent!important;
+    border: none;
 }
-.nav-search > input {
-  background-color: transparent!important;
-  border: none;
-  box-shadow: 0 0!important;
-  padding-left: 0;
-}
-.profile-icon {
-  font-size: 14px;
-  padding: 2px 1px;
-  border: 1px solid #1ec638;
-  border-radius: 50%;
+
+.nav-search>input {
+    background-color: transparent!important;
+    border: none;
+    box-shadow: 0 0!important;
+    padding-left: 0;
 }
 
 
 /* SIDEBAR */
-.sidebar {
-  background-color: #FFFFFF;
-  padding-top: 90px;
-  height: 100vh;
-  padding-left: 15px;
-  position: fixed;
-  overflow: auto;
-}
-.sidebar-link .btn {
-  display: block;
-  box-shadow: 0 0;
-  text-align: left;
-  margin: 10px 0;
-}
-.sidebar-link .btn.active {
-  background-color: #f6f8f9;
-  border-radius: 0;
-  color: #009688;
-  font-weight: bold;
-}
-
 
 .main-page {
-  padding-top: 100px;
-  padding-left: 30px;
+    padding-top: 100px;
+    padding-left: 30px;
 }
+
 .my-progress {
-  border-radius: 15px;
-  overflow: hidden;
+    border-radius: 15px;
+    overflow: hidden;
 }
+
 .my-progress .bar {
-  padding: 2px;
+    padding: 2px;
 }
+
 
 /* BTN TABS */
+
 .btn-tabs {
-  display: flex;
-  margin-bottom: 28px;
-}
-.btn-tabs .btn {
-  display: block;
-  padding: 5px 10px;
-  margin: auto;
-  background-color: #e8f2f2;
-  color: #23a497;
-  border-radius: 15px;
-  font-weight: 500;
-  border: 1px solid #23a497;
-  font-size: 12px;
-}
-.btn-tabs .btn.active {
-  color: #e8f2f2;
-  background-color: #23a497;
-}
-.btn-tabs .btn:focus {
-  box-shadow: 0 0 5px 1px #9ed3d3;
+    display: flex;
+    margin-bottom: 28px;
 }
 
+.btn-tabs .btn {
+    display: block;
+    padding: 5px 10px;
+    margin: auto;
+    background-color: #e8f2f2;
+    color: #23a497;
+    border-radius: 15px;
+    font-weight: 500;
+    border: 1px solid #23a497;
+    font-size: 12px;
+}
+
+.btn-tabs .btn.active {
+    color: #e8f2f2;
+    background-color: #23a497;
+}
+
+.btn-tabs .btn:focus {
+    box-shadow: 0 0 5px 1px #9ed3d3;
+}
+
+
 /* PANDING DONATIONS */
+
 .approval-item {
-  display: block;
-  background-color: #FFF;
-  border-radius: 0 0 30px 30px;
-  text-decoration: none;
-  margin-bottom: 10px;
-  box-shadow: 0 0 10px #ddd;
+    display: block;
+    background-color: #FFF;
+    border-radius: 0 0 30px 30px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px #ddd;
 }
+
 .approval-item .img {
-  height: 120px;
-  overflow: hidden;
+    height: 120px;
+    overflow: hidden;
 }
+
 .warning-progress {
-  background-color: #fcdbc6;
-  overflow: hidden;
-  width: 100%;
-  border-radius: 15px;
+    background-color: #fcdbc6;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 15px;
 }
 
 .main-approval {
-  border-radius: 0 0 30px 30px;
+    border-radius: 0 0 30px 30px;
 }
