@@ -1,12 +1,12 @@
 <template>
-<!-- NAVBAR -->
-  <navbar />
+  <!-- NAVBAR -->
+  <navbar :page_name="page_name"  />
 
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-2 p-0">
         <!-- SIDEBAR -->
-        <sidebar />
+        <sidebar :page_name="page_name"  />
       </div>
 
       <div class="col-sm-10">
@@ -14,7 +14,7 @@
 
           <div class="row">
             <div class="col-sm-4 p-2">
-              <h3 class="mb-4">Campaigns</h3>
+              <h3 class="mb-4">{{ page_name }}</h3>
               <div class="w-100 ps-3 pe-3 bg-white mb-1">
                 <!-- STATISTICS CONTAINER -->
                 <div class="w-100 scroller">
@@ -23,14 +23,14 @@
               </div>
 
               <div class="w-100 p-1">
-                <div class="row">
+                <!--  <div class="row">
                   <div class="col-sm-6 p-2">
                     <div class="w-100 text-center text-light p-2" style="background-color: #00ada6;">
                       <small style="font-size:12px;">Total Campaigns</small>
                       <h4>127,377</h4>
                     </div>
                   </div>
-                </div>
+                </div> -->
                 <div class="row p-2">
                   <div class="w-100 p-3" style="background-color:#c5e5e2;">
                     <h6 class="col-sm-12 mb-4 p-0">Top Campaign Categories</h6>
@@ -100,8 +100,10 @@
                             <div class="bar bg-success" style="width:40%"></div>
                           </div>
                           <div class="clearfix mb-3">
-                            <span class="text-sm float-start"><i class="fa fa-clock-o"></i> <small class="text-pale">27 days left</small></span>
-                            <b class="text-xs float-end"><span class="fa fa-stop-circle-o text-success"></span> $1,200,000 Goal</b>
+                            <span class="text-sm float-start"><i class="fa fa-clock-o"></i> <small class="text-pale">27
+                                days left</small></span>
+                            <b class="text-xs float-end"><span class="fa fa-stop-circle-o text-success"></span>
+                              $1,200,000 Goal</b>
                           </div>
                         </td>
                       </tr>
@@ -131,8 +133,10 @@
                             <div class="bar bg-success" style="width:40%"></div>
                           </div>
                           <div class="clearfix mb-3">
-                            <span class="text-sm float-start"><i class="fa fa-clock-o"></i> <small class="text-pale">27 days left</small></span>
-                            <b class="text-xs float-end"><span class="fa fa-stop-circle-o text-success"></span> $1,200,000 Goal</b>
+                            <span class="text-sm float-start"><i class="fa fa-clock-o"></i> <small class="text-pale">27
+                                days left</small></span>
+                            <b class="text-xs float-end"><span class="fa fa-stop-circle-o text-success"></span>
+                              $1,200,000 Goal</b>
                           </div>
                         </td>
                       </tr>
@@ -162,8 +166,10 @@
                             <div class="bar bg-success" style="width:40%"></div>
                           </div>
                           <div class="clearfix mb-3">
-                            <span class="text-sm float-start"><i class="fa fa-clock-o"></i> <small class="text-pale">27 days left</small></span>
-                            <b class="text-xs float-end"><span class="fa fa-stop-circle-o text-success"></span> $1,200,000 Goal</b>
+                            <span class="text-sm float-start"><i class="fa fa-clock-o"></i> <small class="text-pale">27
+                                days left</small></span>
+                            <b class="text-xs float-end"><span class="fa fa-stop-circle-o text-success"></span>
+                              $1,200,000 Goal</b>
                           </div>
                         </td>
                       </tr>
@@ -193,8 +199,10 @@
                             <div class="bar bg-success" style="width:40%"></div>
                           </div>
                           <div class="clearfix mb-3">
-                            <span class="text-sm float-start"><i class="fa fa-clock-o"></i> <small class="text-pale">27 days left</small></span>
-                            <b class="text-xs float-end"><span class="fa fa-stop-circle-o text-success"></span> $1,200,000 Goal</b>
+                            <span class="text-sm float-start"><i class="fa fa-clock-o"></i> <small class="text-pale">27
+                                days left</small></span>
+                            <b class="text-xs float-end"><span class="fa fa-stop-circle-o text-success"></span>
+                              $1,200,000 Goal</b>
                           </div>
                         </td>
                       </tr>
@@ -228,7 +236,10 @@
                           </div>
                         </div>
                       </td>
-                      <td class="pt-3"><p class="m-0"><i class="fa fa-stop-circle-o text-secondary"></i> <span class="text-success">0.24</span></p></td>
+                      <td class="pt-3">
+                        <p class="m-0"><i class="fa fa-stop-circle-o text-secondary"></i> <span
+                            class="text-success">0.24</span></p>
+                      </td>
                       <td class="pt-3"><small>2 mins</small></td>
                     </tr>
                     <tr>
@@ -243,7 +254,10 @@
                           </div>
                         </div>
                       </td>
-                      <td class="pt-3"><p class="m-0"><i class="fa fa-stop-circle-o text-secondary"></i> <span class="text-success">0.24</span></p></td>
+                      <td class="pt-3">
+                        <p class="m-0"><i class="fa fa-stop-circle-o text-secondary"></i> <span
+                            class="text-success">0.24</span></p>
+                      </td>
                       <td class="pt-3"><small>2 mins</small></td>
                     </tr>
                     <tr>
@@ -258,7 +272,10 @@
                           </div>
                         </div>
                       </td>
-                      <td class="pt-3"><p class="m-0"><i class="fa fa-stop-circle-o text-secondary"></i> <span class="text-success">0.24</span></p></td>
+                      <td class="pt-3">
+                        <p class="m-0"><i class="fa fa-stop-circle-o text-secondary"></i> <span
+                            class="text-success">0.24</span></p>
+                      </td>
                       <td class="pt-3"><small>2 mins</small></td>
                     </tr>
                     <tr>
@@ -273,7 +290,10 @@
                           </div>
                         </div>
                       </td>
-                      <td class="pt-3"><p class="m-0"><i class="fa fa-stop-circle-o text-secondary"></i> <span class="text-success">0.24</span></p></td>
+                      <td class="pt-3">
+                        <p class="m-0"><i class="fa fa-stop-circle-o text-secondary"></i> <span
+                            class="text-success">0.24</span></p>
+                      </td>
                       <td class="pt-3"><small>2 mins</small></td>
                     </tr>
                     <tr>
@@ -288,7 +308,10 @@
                           </div>
                         </div>
                       </td>
-                      <td class="pt-3"><p class="m-0"><i class="fa fa-stop-circle-o text-secondary"></i> <span class="text-success">0.24</span></p></td>
+                      <td class="pt-3">
+                        <p class="m-0"><i class="fa fa-stop-circle-o text-secondary"></i> <span
+                            class="text-success">0.24</span></p>
+                      </td>
                       <td class="pt-3"><small>2 mins</small></td>
                     </tr>
                   </tbody>
@@ -299,12 +322,18 @@
                 <div class="col-sm-6 p-0">
                   <div class="w-100 p-3 bg-success-light">
                     <h6 class="text-sm">Top Donor Countries</h6>
-                    <b class="d-block"><img src="../../public/assets/images/Switzerland-icon.jpg" width="15" alt="Switzerland"> Switzerland</b>
-                    <b class="d-block"><img src="../../public/assets/images/Russia-icon.png" width="15" alt="Russia"> Russia</b>
-                    <b class="d-block"><img src="../../public/assets/images/Brazil-icon.png" width="15" alt="Brazil"> Brazil</b>
-                    <b class="d-block"><img src="../../public/assets/images/Indonesia-icon.jpg" width="15" alt="Indonesia"> Indonesia</b>
-                    <b class="d-block"><img src="../../public/assets/images/India-icon.jpg" width="15" alt="India"> India</b>
-                    <b class="d-block"><img src="../../public/assets/images/Nigeria-icon.png" width="15" alt="Nigeria"> Nigeria</b>
+                    <b class="d-block"><img src="../../public/assets/images/Switzerland-icon.jpg" width="15"
+                        alt="Switzerland"> Switzerland</b>
+                    <b class="d-block"><img src="../../public/assets/images/Russia-icon.png" width="15" alt="Russia">
+                      Russia</b>
+                    <b class="d-block"><img src="../../public/assets/images/Brazil-icon.png" width="15" alt="Brazil">
+                      Brazil</b>
+                    <b class="d-block"><img src="../../public/assets/images/Indonesia-icon.jpg" width="15"
+                        alt="Indonesia"> Indonesia</b>
+                    <b class="d-block"><img src="../../public/assets/images/India-icon.jpg" width="15" alt="India">
+                      India</b>
+                    <b class="d-block"><img src="../../public/assets/images/Nigeria-icon.png" width="15" alt="Nigeria">
+                      Nigeria</b>
                     <b class="d-block"><img src="../../public/assets/images/USA-icon.png" width="15" alt="USA"> USA</b>
                   </div>
                 </div>
@@ -336,7 +365,8 @@ export default {
       series: [{
         name: 'series-1',
         data: [30, 40, 45, 50, 49, 60, 70, 91]
-      }]
+      }],
+      page_name: "Campaigns"
     }
   },
   components: {

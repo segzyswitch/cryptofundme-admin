@@ -5,6 +5,7 @@
     padding-left: 0px;
     position: fixed;
     overflow: auto;
+    margin-bottom: 0;
 }
 
 .sidebar span {

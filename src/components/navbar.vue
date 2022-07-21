@@ -24,6 +24,9 @@
           </div>
         </form>
         <ul class="navbar-nav ms-auto">
+          <li class="nav-item admin-btn" v-if="page_name=='Administrators'">
+            <a href="#" class="nav-link">Create Admin</a>
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link">
               <i class="fa fa-commenting-o"></i>
@@ -35,6 +38,8 @@
                 <small>20</small>
               </span>
             </a>
+
+
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link  " href="#" data-bs-toggle="dropdown">
@@ -49,7 +54,7 @@
             </ul>
           </li>
 
-         
+
         </ul>
         <!-- <div class="col-sm-2"></div> -->
       </div>
@@ -93,10 +98,20 @@ export default {
     return {
       base: process.env.BASE_URL,
     }
-  }
+  },
+  props: ["page_name"]
 }
 </script>
 
 <style scoped>
 @import url(../../public/assets/css/navbar.css);
+
+.admin-btn .nav-link,.admin-btn .nav-link:hover {
+  color: #e8f2f2;
+  background-color: #23a497;
+  font-size: 18px;
+  margin-top: 10px;
+  padding: 10px 30px;
+
+}
 </style>
