@@ -17,7 +17,7 @@
             <div class="col-sm-4 p-2">
               <div class="w-100 ps-3 pe-3 bg-white mb-3">
                 <div class="w-100 scroller">                  
-                  <apexchart width="100%" type="bar" :options="options" :series="series"></apexchart>
+                  <apexchart width="100%" height="400" type="bar" :options="options" :series="series"></apexchart>
                 </div>
                 <div class="row">
                   <div class="col-4 p-2">
@@ -277,12 +277,12 @@ export default {
           id: 'vuechart-example'
         },
         xaxis: {
-          categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998]
+          categories: ["", "", ""]
         }
       },
       series: [{
         name: 'series-1',
-        data: [30, 40, 45, 50, 49, 60, 70, 91]
+        data: [127377, 5201, 547]
       }]
     }
   },

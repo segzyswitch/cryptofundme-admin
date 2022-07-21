@@ -1,6 +1,3 @@
-body {
-  background-color: #f6f8f9!important;
-}
 /* COLORS */
 .bg-orange { background-color: #f2711c!important; }
 .text-orange { color: #f2711c!important; }
@@ -118,53 +115,5 @@ b {font-weight:500;}
   overflow: hidden;
 }
 .my-progress .bar {
-  padding: 2px;
-}
-
-/* BTN TABS */
-.btn-tabs {
-  display: flex;
-  margin-bottom: 28px;
-}
-.btn-tabs .btn {
-  display: block;
-  padding: 5px 10px;
-  margin: auto;
-  background-color: #e8f2f2;
-  color: #23a497;
-  border-radius: 15px;
-  font-weight: 500;
-  border: 1px solid #23a497;
-  font-size: 12px;
-}
-.btn-tabs .btn.active {
-  color: #e8f2f2;
-  background-color: #23a497;
-}
-.btn-tabs .btn:focus {
-  box-shadow: 0 0 5px 1px #9ed3d3;
-}
-
-/* PANDING DONATIONS */
-.approval-item {
-  display: block;
-  background-color: #FFF;
-  border-radius: 0 0 30px 30px;
-  text-decoration: none;
-  margin-bottom: 10px;
-  box-shadow: 0 0 10px #ddd;
-}
-.approval-item .img {
-  height: 120px;
-  overflow: hidden;
-}
-.warning-progress {
-  background-color: #fcdbc6;
-  overflow: hidden;
-  width: 100%;
-  border-radius: 15px;
-}
-
-.main-approval {
-  border-radius: 0 0 30px 30px;
+  padding: 2px 0;
 }
