@@ -75,7 +75,9 @@
 
                 <button class="login_btn">Create</button>
             </div>
-            <div class="col-sm-5 col-12 mx-auto"></div>
+            <div class="col-sm-5 col-12 me-auto">
+                <img :src="base+'imgs/reg.jpg'" class="form-img" alt="">
+            </div>
         </div>
     </div>
 </template>
@@ -172,15 +174,16 @@ legend {
 .upload_img {
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.1);
-    width: 120px;
+    width: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 120px;
+    height: 70px;
     margin: 2px auto;
     text-align: center;
     color: #009688;
     cursor: pointer;
+    font-size: 10px;
 }
 
 .btn-group button {
@@ -213,5 +216,9 @@ legend {
     text-align: center !important;
     text-decoration: none;
     border: 1px solid #009688;
+}
+
+.form-img{
+    width:100%;
 }
 </style>

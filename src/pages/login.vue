@@ -17,9 +17,9 @@
     </nav>
 
 
-    <div class="container-fluid bg-white" style="padding-top:100px; height:100vh;">
+    <div class="container-fluid bg-white" style="padding-top:200px; height:100vh;">
         <div class="row">
-            <div class="col-sm-5 col-12">
+            <div class="col-sm-5 col-12 ms-auto">
                 <h3>Log in to Cryptofundme Admin
                 </h3>
                 <fieldset class="border p-3 mb-3">
@@ -38,6 +38,9 @@
                     </div>
                 </fieldset>
                 <button class="login_btn">Login</button>
+            </div>
+            <div class="col-sm-5 col-12 me-auto">
+                <img :src="base+'imgs/login.jpg'" class="img-fluid" alt="">
             </div>
         </div>
     </div>

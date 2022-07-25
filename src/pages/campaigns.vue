@@ -1,69 +1,28 @@
 <template>
   <!-- NAVBAR -->
-  <navbar :page_name="page_name"  />
+  <navbar />
 
-  <div class="container-fluid">
+  <div class="container-fluid admin-body">
     <div class="row">
       <div class="col-sm-2 p-0">
         <!-- SIDEBAR -->
-        <sidebar :page_name="page_name"  />
+        <sidebar />
       </div>
 
       <div class="col-sm-10">
         <div class="w-100 main-page">
-
+          <h3 class="mb-4">Campaigns</h3>
           <div class="row">
-            <div class="col-sm-4 p-2">
-              <h3 class="mb-4">{{ page_name }}</h3>
-              <div class="w-100 ps-3 pe-3 bg-white mb-1">
-                <!-- STATISTICS CONTAINER -->
-                <div class="w-100 scroller">
-                  <apexchart width="100%" type="bar" :options="options" :series="series"></apexchart>
-                </div>
-              </div>
-
-              <div class="w-100 p-1">
-                <!--  <div class="row">
-                  <div class="col-sm-6 p-2">
-                    <div class="w-100 text-center text-light p-2" style="background-color: #00ada6;">
-                      <small style="font-size:12px;">Total Campaigns</small>
-                      <h4>127,377</h4>
-                    </div>
-                  </div>
-                </div> -->
-                <div class="row p-2">
-                  <div class="w-100 p-3" style="background-color:#c5e5e2;">
-                    <h6 class="col-sm-12 mb-4 p-0">Top Campaign Categories</h6>
-                    <div class="row">
-                      <div class="col-3 pe-2 ps-2 text-center">
-                        <h5 class="m-0">21,547</h5>
-                        <small>Religion</small>
-                      </div>
-                      <div class="col-3 pe-2 ps-2 text-center">
-                        <h5 class="m-0">2,547</h5>
-                        <small>Sport</small>
-                      </div>
-                      <div class="col-3 pe-2 ps-2 text-center">
-                        <h5 class="m-0">7,547</h5>
-                        <small>Arts</small>
-                      </div>
-                      <div class="col-3 pe-2 ps-2 text-center">
-                        <h5 class="m-0">7,547</h5>
-                        <small>Events</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="col-sm-5 btn-tabs">
+              <button class="btn btn-sm text-sm active">Best performing</button>
+              <button class="btn btn-sm text-sm">Worst performing</button>
+              <button class="btn btn-sm text-sm">All Campaigns</button>
             </div>
-            <div class="col-sm-4 p-2">
-              <div class="w-100 btn-tabs">
-                <button class="btn btn-sm text-sm active">Best performing</button>
-                <button class="btn btn-sm text-sm">Worst performing</button>
-                <button class="btn btn-sm text-sm">All Campaigns</button>
-              </div>
-              <div class="w-100 pt-2 ps-2 pe-2 bg-white mb-3 campaigns">
-                <h6 class="mb-3">Top performing Campaigns</h6>
+          </div>
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="w-100 ps-2 pe-2 bg-white mb-3 campaigns">
+                <h5 class="mb-3">Top performing Campaigns</h5>
                 <div class="table-responsive">
                   <table class="table table-sm text-sm">
                     <thead>
@@ -211,131 +170,79 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-4 p-2">
-              <div class="w-100 d-none d-sm-block" style="height:60px;"></div>
-              <div class="w-100 p-2 bg-black text-light donations">
-                <h6 class="mb-3 text-sm">Recent donations</h6>
-                <table class="table table-sm text-sm text-light">
-                  <thead>
-                    <tr>
-                      <th>Campaign</th>
-                      <th>Donation</th>
-                      <th>Time</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="pt-3">
-                        <div class="clearfix">
-                          <div class="img-30 rounded-3">
-                            <span class="h-100 d-block bg-danger"></span>
-                          </div>
-                          <div class="img-30-info">
-                            <b class="d-block">Adam Akorede</b>
-                            <small>Lorem ipsum lodor...</small>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="pt-3">
-                        <p class="m-0"><i class="fa fa-stop-circle-o text-secondary"></i> <span
-                            class="text-success">0.24</span></p>
-                      </td>
-                      <td class="pt-3"><small>2 mins</small></td>
-                    </tr>
-                    <tr>
-                      <td class="pt-3">
-                        <div class="clearfix">
-                          <div class="img-30 rounded-3">
-                            <span class="h-100 d-block bg-danger"></span>
-                          </div>
-                          <div class="img-30-info">
-                            <b class="d-block">Adam Akorede</b>
-                            <small>Lorem ipsum lodor...</small>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="pt-3">
-                        <p class="m-0"><i class="fa fa-stop-circle-o text-secondary"></i> <span
-                            class="text-success">0.24</span></p>
-                      </td>
-                      <td class="pt-3"><small>2 mins</small></td>
-                    </tr>
-                    <tr>
-                      <td class="pt-3">
-                        <div class="clearfix">
-                          <div class="img-30 rounded-3">
-                            <span class="h-100 d-block bg-danger"></span>
-                          </div>
-                          <div class="img-30-info">
-                            <b class="d-block">Adam Akorede</b>
-                            <small>Lorem ipsum lodor...</small>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="pt-3">
-                        <p class="m-0"><i class="fa fa-stop-circle-o text-secondary"></i> <span
-                            class="text-success">0.24</span></p>
-                      </td>
-                      <td class="pt-3"><small>2 mins</small></td>
-                    </tr>
-                    <tr>
-                      <td class="pt-3">
-                        <div class="clearfix">
-                          <div class="img-30 rounded-3">
-                            <span class="h-100 d-block bg-danger"></span>
-                          </div>
-                          <div class="img-30-info">
-                            <b class="d-block">Adam Akorede</b>
-                            <small>Lorem ipsum lodor...</small>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="pt-3">
-                        <p class="m-0"><i class="fa fa-stop-circle-o text-secondary"></i> <span
-                            class="text-success">0.24</span></p>
-                      </td>
-                      <td class="pt-3"><small>2 mins</small></td>
-                    </tr>
-                    <tr>
-                      <td class="pt-3">
-                        <div class="clearfix">
-                          <div class="img-30 rounded-3">
-                            <span class="h-100 d-block bg-danger"></span>
-                          </div>
-                          <div class="img-30-info">
-                            <b class="d-block">Adam Akorede</b>
-                            <small>Lorem ipsum lodor...</small>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="pt-3">
-                        <p class="m-0"><i class="fa fa-stop-circle-o text-secondary"></i> <span
-                            class="text-success">0.24</span></p>
-                      </td>
-                      <td class="pt-3"><small>2 mins</small></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="cleafix mt-3">
-                <div class="col-sm-6 p-1"></div>
-                <div class="col-sm-6 p-0">
-                  <div class="w-100 p-3 bg-success-light">
-                    <h6 class="text-sm">Top Donor Countries</h6>
-                    <b class="d-block"><img src="../../public/assets/images/Switzerland-icon.jpg" width="15"
-                        alt="Switzerland"> Switzerland</b>
-                    <b class="d-block"><img src="../../public/assets/images/Russia-icon.png" width="15" alt="Russia">
-                      Russia</b>
-                    <b class="d-block"><img src="../../public/assets/images/Brazil-icon.png" width="15" alt="Brazil">
-                      Brazil</b>
-                    <b class="d-block"><img src="../../public/assets/images/Indonesia-icon.jpg" width="15"
-                        alt="Indonesia"> Indonesia</b>
-                    <b class="d-block"><img src="../../public/assets/images/India-icon.jpg" width="15" alt="India">
-                      India</b>
-                    <b class="d-block"><img src="../../public/assets/images/Nigeria-icon.png" width="15" alt="Nigeria">
-                      Nigeria</b>
-                    <b class="d-block"><img src="../../public/assets/images/USA-icon.png" width="15" alt="USA"> USA</b>
+            <div class="col-sm-5">
+              <h5 class="mb-4">Top campaigns my category</h5>
+
+              <div class="w-100">
+                <div class="w-100 loaders">
+                  <div class="loader-item">
+                    <div class="loader-bar bg-orange" style="width:90%;"></div>
+                    <div class="loader-text">100 Billion for Peter Obi</div>
                   </div>
+                  <div class="loader-info">$930,345</div>
+                </div>
+                <div class="w-100 loaders">
+                  <div class="loader-item">
+                    <div class="loader-bar bg-success" style="width:80%;"></div>
+                    <div class="loader-text">Black kids can code</div>
+                  </div>
+                  <div class="loader-info">$930,345</div>
+                </div>
+                <div class="w-100 loaders">
+                  <div class="loader-item">
+                    <div class="loader-bar bg-green" style="width:70%;"></div>
+                    <div class="loader-text">BAT movement</div>
+                  </div>
+                  <div class="loader-info">$930,345</div>
+                </div>
+                <div class="w-100 loaders">
+                  <div class="loader-item">
+                    <div class="loader-bar bg-primary" style="width:60%;"></div>
+                    <div class="loader-text">My dog has been hailing for</div>
+                  </div>
+                  <div class="loader-info">$930,345</div>
+                </div>
+                <div class="w-100 loaders">
+                  <div class="loader-item">
+                    <div class="loader-bar" style="width:50%;background-color:#1d5d57;"></div>
+                    <div class="loader-text">My dog has been hailing for</div>
+                  </div>
+                  <div class="loader-info">$930,345</div>
+                </div>
+                <div class="w-100 loaders">
+                  <div class="loader-item">
+                    <div class="loader-bar" style="width:55%;background-color:#e82b65;"></div>
+                    <div class="loader-text">My dog has been hailing for</div>
+                  </div>
+                  <div class="loader-info">$930,345</div>
+                </div>
+                <div class="w-100 loaders">
+                  <div class="loader-item">
+                    <div class="loader-bar" style="width:45%;background-color:#000000;"></div>
+                    <div class="loader-text">My dog has been hailing for</div>
+                  </div>
+                  <div class="loader-info">$930,345</div>
+                </div>
+                <div class="w-100 loaders">
+                  <div class="loader-item">
+                    <div class="loader-bar" style="width:40%;background-color:#009688;"></div>
+                    <div class="loader-text">My dog has been hailing for</div>
+                  </div>
+                  <div class="loader-info">$930,345</div>
+                </div>
+                <div class="w-100 loaders">
+                  <div class="loader-item">
+                    <div class="loader-bar" style="width:40%;background-color:#fbbd08;"></div>
+                    <div class="loader-text">My dog has been hailing for</div>
+                  </div>
+                  <div class="loader-info">$930,345</div>
+                </div>
+                <div class="w-100 loaders">
+                  <div class="loader-item">
+                    <div class="loader-bar" style="width:40%;background-color:#1d5d57;"></div>
+                    <div class="loader-text">My dog has been hailing for</div>
+                  </div>
+                  <div class="loader-info">$930,345</div>
                 </div>
               </div>
             </div>
@@ -365,8 +272,7 @@ export default {
       series: [{
         name: 'series-1',
         data: [30, 40, 45, 50, 49, 60, 70, 91]
-      }],
-      page_name: "Campaigns"
+      }]
     }
   },
   components: {
@@ -375,3 +281,78 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+body {
+
+  background-color: #fff !important;
+}
+
+.admin-body {
+  background-color: #fff !important;
+  height: 100vh;
+  overflow: auto;
+}
+
+/* BTN TABS */
+.btn-tabs {
+  display: flex;
+  margin-bottom: 28px;
+}
+
+.btn-tabs .btn {
+  display: block;
+  padding: 5px 10px;
+  margin: auto;
+  background-color: #e8f2f2;
+  color: #23a497;
+  border-radius: 15px;
+  font-weight: 500;
+  border: 1px solid #23a497;
+  font-size: 12px;
+}
+
+.btn-tabs .btn.active {
+  color: #e8f2f2;
+  background-color: #23a497;
+}
+
+.btn-tabs .btn:focus {
+  box-shadow: 0 0 5px 1px #9ed3d3;
+}
+
+
+.loaders {
+  overflow: auto;
+}
+
+.loader-item {
+  border: 1px solid #ccc;
+  height: 30px;
+  position: relative;
+  margin-bottom: 15px;
+  width: 80%;
+  float: left;
+}
+
+.loader-info {
+  float: left;
+  width: 20%;
+  text-align: right;
+  padding: 3px;
+}
+
+.loader-bar {
+  height: 30px;
+}
+
+.loader-text {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 3px 10px;
+  color: #fff;
+  text-shadow: 0 0 5px #999;
+}
+</style>

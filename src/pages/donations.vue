@@ -1,41 +1,21 @@
 <template>
-<!-- NAVBAR -->
+  <!-- NAVBAR -->
   <navbar />
 
-  <div class="container-fluid">
+  <div class="container-fluid admin-body">
     <div class="row">
       <div class="col-sm-2 p-0">
         <!-- SIDEBAR -->
         <sidebar />
       </div>
 
-      <div class="col-sm-10">
+      <div class="col-sm-10 mb-3">
         <div class="w-100 main-page">
 
           <div class="row">
-            <div class="col-sm-4 p-2">
-              <h3 class="mb-4">Donations</h3>
-              <div class="w-100 ps-3 pe-3 bg-white mb-1">
-                <!-- STATISTICS CONTAINER -->
-                <div class="w-100 scroller">
-                  <apexchart width="100%" type="bar" :options="options" :series="series"></apexchart>
-                </div>
-              </div>
-
-              <div class="w-100 p-1">
-                <div class="row">
-                  <div class="col-sm-6 p-2">
-                    <div class="w-100 text-center p-2" style="background-color:#e8f7b2;">
-                      <small style="font-size:12px;">Total Campaigns</small>
-                      <h4>127,377</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4 p-2">
-              <div class="w-100 d-none d-sm-block" style="height:60px;"></div>
-              <div class="w-100 pt-2 ps-2 pe-2 bg-white mb-3 campaigns">
+            <h4 class="mb-4">Donations</h4>
+            <div class="col-sm-5">
+              <div class="w-100 mb-3 campaigns">
                 <h6 class="mb-3">Top performing Campaigns</h6>
                 <div class="table-responsive">
                   <table class="table table-sm text-sm">
@@ -49,7 +29,8 @@
                       <!-- TABLE ROW -->
                       <tr>
                         <td class="pb-3">
-                          <b class="d-block text-success"><img src="assets/images/coin-icon.png" width="15"> Medicine</b>
+                          <b class="d-block text-success"><img src="assets/images/coin-icon.png" width="15">
+                            Medicine</b>
                           <b class="b-block text-danger">$908.72</b>
                         </td>
                         <td class="pb-3">
@@ -67,7 +48,8 @@
                       <!-- TABLE ROW -->
                       <tr>
                         <td class="pb-3">
-                          <b class="d-block text-success"><img src="assets/images/coin-icon.png" width="15"> Medicine</b>
+                          <b class="d-block text-success"><img src="assets/images/coin-icon.png" width="15">
+                            Medicine</b>
                           <b class="b-block text-danger">$908.72</b>
                         </td>
                         <td class="pb-3">
@@ -85,7 +67,8 @@
                       <!-- TABLE ROW -->
                       <tr>
                         <td class="pb-3">
-                          <b class="d-block text-success"><img src="assets/images/coin-icon.png" width="15"> Medicine</b>
+                          <b class="d-block text-success"><img src="assets/images/coin-icon.png" width="15">
+                            Medicine</b>
                           <b class="b-block text-danger">$908.72</b>
                         </td>
                         <td class="pb-3">
@@ -103,7 +86,8 @@
                       <!-- TABLE ROW -->
                       <tr>
                         <td class="pb-3">
-                          <b class="d-block text-success"><img src="assets/images/coin-icon.png" width="15"> Medicine</b>
+                          <b class="d-block text-success"><img src="assets/images/coin-icon.png" width="15">
+                            Medicine</b>
                           <b class="b-block text-danger">$908.72</b>
                         </td>
                         <td class="pb-3">
@@ -121,7 +105,8 @@
                       <!-- TABLE ROW -->
                       <tr>
                         <td class="pb-3">
-                          <b class="d-block text-success"><img src="assets/images/coin-icon.png" width="15"> Medicine</b>
+                          <b class="d-block text-success"><img src="assets/images/coin-icon.png" width="15">
+                            Medicine</b>
                           <b class="b-block text-danger">$908.72</b>
                         </td>
                         <td class="pb-3">
@@ -139,7 +124,8 @@
                       <!-- TABLE ROW -->
                       <tr>
                         <td class="pb-3">
-                          <b class="d-block text-success"><img src="assets/images/coin-icon.png" width="15"> Medicine</b>
+                          <b class="d-block text-success"><img src="assets/images/coin-icon.png" width="15">
+                            Medicine</b>
                           <b class="b-block text-danger">$908.72</b>
                         </td>
                         <td class="pb-3">
@@ -157,7 +143,8 @@
                       <!-- TABLE ROW -->
                       <tr>
                         <td class="pb-3">
-                          <b class="d-block text-success"><img src="assets/images/coin-icon.png" width="15"> Medicine</b>
+                          <b class="d-block text-success"><img src="assets/images/coin-icon.png" width="15">
+                            Medicine</b>
                           <b class="b-block text-danger">$908.72</b>
                         </td>
                         <td class="pb-3">
@@ -175,7 +162,8 @@
                       <!-- TABLE ROW -->
                       <tr>
                         <td class="pb-3">
-                          <b class="d-block text-success"><img src="assets/images/coin-icon.png" width="15"> Medicine</b>
+                          <b class="d-block text-success"><img src="assets/images/coin-icon.png" width="15">
+                            Medicine</b>
                           <b class="b-block text-danger">$908.72</b>
                         </td>
                         <td class="pb-3">
@@ -195,96 +183,81 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-4 p-2">
-              <div class="w-100 d-none d-sm-block" style="height:60px;"></div>
-              <div class="w-100 p-2 bg-black text-light donations">
-                <h6 class="mb-3 text-sm">Recent donations</h6>
-                <table class="table table-sm text-sm text-light">
-                  <thead>
-                    <tr>
-                      <th>Campaign</th>
-                      <th>Donation</th>
-                      <th>Time</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="pt-3">
-                        <div class="clearfix">
-                          <div class="img-30 rounded-3">
-                            <span class="h-100 d-block bg-danger"></span>
-                          </div>
-                          <div class="img-30-info">
-                            <b class="d-block">Adam Akorede</b>
-                            <small>Lorem ipsum lodor...</small>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="pt-3"><p class="m-0"><i class="fa fa-stop-circle-o text-secondary"></i> <span class="text-success">0.24</span></p></td>
-                      <td class="pt-3"><small>2 mins</small></td>
-                    </tr>
-                    <tr>
-                      <td class="pt-3">
-                        <div class="clearfix">
-                          <div class="img-30 rounded-3">
-                            <span class="h-100 d-block bg-danger"></span>
-                          </div>
-                          <div class="img-30-info">
-                            <b class="d-block">Adam Akorede</b>
-                            <small>Lorem ipsum lodor...</small>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="pt-3"><p class="m-0"><i class="fa fa-stop-circle-o text-secondary"></i> <span class="text-success">0.24</span></p></td>
-                      <td class="pt-3"><small>2 mins</small></td>
-                    </tr>
-                    <tr>
-                      <td class="pt-3">
-                        <div class="clearfix">
-                          <div class="img-30 rounded-3">
-                            <span class="h-100 d-block bg-danger"></span>
-                          </div>
-                          <div class="img-30-info">
-                            <b class="d-block">Adam Akorede</b>
-                            <small>Lorem ipsum lodor...</small>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="pt-3"><p class="m-0"><i class="fa fa-stop-circle-o text-secondary"></i> <span class="text-success">0.24</span></p></td>
-                      <td class="pt-3"><small>2 mins</small></td>
-                    </tr>
-                    <tr>
-                      <td class="pt-3">
-                        <div class="clearfix">
-                          <div class="img-30 rounded-3">
-                            <span class="h-100 d-block bg-danger"></span>
-                          </div>
-                          <div class="img-30-info">
-                            <b class="d-block">Adam Akorede</b>
-                            <small>Lorem ipsum lodor...</small>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="pt-3"><p class="m-0"><i class="fa fa-stop-circle-o text-secondary"></i> <span class="text-success">0.24</span></p></td>
-                      <td class="pt-3"><small>2 mins</small></td>
-                    </tr>
-                    <tr>
-                      <td class="pt-3">
-                        <div class="clearfix">
-                          <div class="img-30 rounded-3">
-                            <span class="h-100 d-block bg-danger"></span>
-                          </div>
-                          <div class="img-30-info">
-                            <b class="d-block">Adam Akorede</b>
-                            <small>Lorem ipsum lodor...</small>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="pt-3"><p class="m-0"><i class="fa fa-stop-circle-o text-secondary"></i> <span class="text-success">0.24</span></p></td>
-                      <td class="pt-3"><small>2 mins</small></td>
-                    </tr>
-                  </tbody>
-                </table>
+
+            <div class="col-sm-5">
+              <h5 class="mb-4">Top campaigns my category</h5>
+
+              <div class="w-100">
+                <div class="w-100 loaders">
+                  <div class="loader-item">
+                    <div class="loader-bar bg-orange" style="width:90%;"></div>
+                    <div class="loader-text">100 Billion for Peter Obi</div>
+                  </div>
+                  <div class="loader-info">$930,345</div>
+                </div>
+                <div class="w-100 loaders">
+                  <div class="loader-item">
+                    <div class="loader-bar bg-success" style="width:80%;"></div>
+                    <div class="loader-text">Black kids can code</div>
+                  </div>
+                  <div class="loader-info">$930,345</div>
+                </div>
+                <div class="w-100 loaders">
+                  <div class="loader-item">
+                    <div class="loader-bar bg-green" style="width:70%;"></div>
+                    <div class="loader-text">BAT movement</div>
+                  </div>
+                  <div class="loader-info">$930,345</div>
+                </div>
+                <div class="w-100 loaders">
+                  <div class="loader-item">
+                    <div class="loader-bar bg-primary" style="width:60%;"></div>
+                    <div class="loader-text">My dog has been hailing for</div>
+                  </div>
+                  <div class="loader-info">$930,345</div>
+                </div>
+                <div class="w-100 loaders">
+                  <div class="loader-item">
+                    <div class="loader-bar" style="width:50%;background-color:#1d5d57;"></div>
+                    <div class="loader-text">My dog has been hailing for</div>
+                  </div>
+                  <div class="loader-info">$930,345</div>
+                </div>
+                <div class="w-100 loaders">
+                  <div class="loader-item">
+                    <div class="loader-bar" style="width:55%;background-color:#e82b65;"></div>
+                    <div class="loader-text">My dog has been hailing for</div>
+                  </div>
+                  <div class="loader-info">$930,345</div>
+                </div>
+                <div class="w-100 loaders">
+                  <div class="loader-item">
+                    <div class="loader-bar" style="width:45%;background-color:#000000;"></div>
+                    <div class="loader-text">My dog has been hailing for</div>
+                  </div>
+                  <div class="loader-info">$930,345</div>
+                </div>
+                <div class="w-100 loaders">
+                  <div class="loader-item">
+                    <div class="loader-bar" style="width:40%;background-color:#009688;"></div>
+                    <div class="loader-text">My dog has been hailing for</div>
+                  </div>
+                  <div class="loader-info">$930,345</div>
+                </div>
+                <div class="w-100 loaders">
+                  <div class="loader-item">
+                    <div class="loader-bar" style="width:40%;background-color:#fbbd08;"></div>
+                    <div class="loader-text">My dog has been hailing for</div>
+                  </div>
+                  <div class="loader-info">$930,345</div>
+                </div>
+                <div class="w-100 loaders">
+                  <div class="loader-item">
+                    <div class="loader-bar" style="width:40%;background-color:#1d5d57;"></div>
+                    <div class="loader-text">My dog has been hailing for</div>
+                  </div>
+                  <div class="loader-info">$930,345</div>
+                </div>
               </div>
             </div>
           </div>
@@ -300,6 +273,7 @@ import sidebar from '../components/sidebar.vue'
 //import VueApexCharts from 'vue-apexcharts'
 
 export default {
+  name: "Donations",
   data() {
     return {
       options: {
@@ -322,3 +296,50 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+body {
+
+  background-color: #fff !important;
+}
+
+.admin-body {
+  background-color: #fff !important;
+  height: 100vh;
+  overflow: auto;
+}
+
+.loaders {
+  overflow: auto;
+}
+
+.loader-item {
+  border: 1px solid #ccc;
+  height: 30px;
+  position: relative;
+  margin-bottom: 15px;
+  width: 80%;
+  float: left;
+}
+
+.loader-info {
+  float: left;
+  width: 20%;
+  text-align: right;
+  padding: 3px;
+}
+
+.loader-bar {
+  height: 30px;
+}
+
+.loader-text {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 3px 10px;
+  color: #fff;
+  text-shadow: 0 0 5px #999;
+}
+</style>

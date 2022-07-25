@@ -1,8 +1,8 @@
 <template>
-<!-- NAVBAR -->
+  <!-- NAVBAR -->
   <navbar />
 
-  <div class="container-fluid">
+  <div class="container-fluid admin-body">
     <div class="row">
       <div class="col-sm-2 p-0">
         <!-- SIDEBAR -->
@@ -11,9 +11,21 @@
 
       <div class="col-sm-10">
         <div class="w-100 main-page">
-          <h3 class="mb-4 text-orange">Pending approvals(15)</h3>
+          <div class="row mb-4">
+            <ul class="nav section-tab">
+              <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#home">Pending approvals(15)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#menu1">New(1)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#menu2">Existing(6)</a>
+              </li>
+            </ul>
+          </div>
 
-          <div class="row">
+          <div class="row mb-3">
             <div class="col-5">
               <router-link to="/approve-donation" class="approval-item text-sm">
                 <div class="img">
@@ -30,7 +42,8 @@
                     <div class="bar bg-warning pt-1" style="width:25%"></div>
                   </div>
                   <span class="btn-block text-pale text-xs">25 days left</span>
-                  <b class="d-block text-secondary text-center"><i class="fa text-warning fa-stop-circle-o"></i> $10000 Goal</b>
+                  <b class="d-block text-secondary text-center"><i class="fa text-warning fa-stop-circle-o"></i> $10000
+                    Goal</b>
                 </div>
               </router-link>
             </div>
@@ -50,7 +63,8 @@
                     <div class="bar bg-warning pt-1" style="width:25%"></div>
                   </div>
                   <span class="btn-block text-pale text-xs">25 days left</span>
-                  <b class="d-block text-secondary text-center"><i class="fa text-warning fa-stop-circle-o"></i> $10000 Goal</b>
+                  <b class="d-block text-secondary text-center"><i class="fa text-warning fa-stop-circle-o"></i> $10000
+                    Goal</b>
                 </div>
               </router-link>
             </div>
@@ -70,7 +84,8 @@
                     <div class="bar bg-warning pt-1" style="width:25%"></div>
                   </div>
                   <span class="btn-block text-pale text-xs">25 days left</span>
-                  <b class="d-block text-secondary text-center"><i class="fa text-warning fa-stop-circle-o"></i> $10000 Goal</b>
+                  <b class="d-block text-secondary text-center"><i class="fa text-warning fa-stop-circle-o"></i> $10000
+                    Goal</b>
                 </div>
               </router-link>
             </div>
@@ -90,7 +105,8 @@
                     <div class="bar bg-warning pt-1" style="width:25%"></div>
                   </div>
                   <span class="btn-block text-pale text-xs">25 days left</span>
-                  <b class="d-block text-secondary text-center"><i class="fa text-warning fa-stop-circle-o"></i> $10000 Goal</b>
+                  <b class="d-block text-secondary text-center"><i class="fa text-warning fa-stop-circle-o"></i> $10000
+                    Goal</b>
                 </div>
               </router-link>
             </div>
@@ -110,7 +126,8 @@
                     <div class="bar bg-warning pt-1" style="width:25%"></div>
                   </div>
                   <span class="btn-block text-pale text-xs">25 days left</span>
-                  <b class="d-block text-secondary text-center"><i class="fa text-warning fa-stop-circle-o"></i> $10000 Goal</b>
+                  <b class="d-block text-secondary text-center"><i class="fa text-warning fa-stop-circle-o"></i> $10000
+                    Goal</b>
                 </div>
               </router-link>
             </div>
@@ -130,7 +147,8 @@
                     <div class="bar bg-warning pt-1" style="width:25%"></div>
                   </div>
                   <span class="btn-block text-pale text-xs">25 days left</span>
-                  <b class="d-block text-secondary text-center"><i class="fa text-warning fa-stop-circle-o"></i> $10000 Goal</b>
+                  <b class="d-block text-secondary text-center"><i class="fa text-warning fa-stop-circle-o"></i> $10000
+                    Goal</b>
                 </div>
               </router-link>
             </div>
@@ -150,7 +168,8 @@
                     <div class="bar bg-warning pt-1" style="width:25%"></div>
                   </div>
                   <span class="btn-block text-pale text-xs">25 days left</span>
-                  <b class="d-block text-secondary text-center"><i class="fa text-warning fa-stop-circle-o"></i> $10000 Goal</b>
+                  <b class="d-block text-secondary text-center"><i class="fa text-warning fa-stop-circle-o"></i> $10000
+                    Goal</b>
                 </div>
               </router-link>
             </div>
@@ -170,7 +189,8 @@
                     <div class="bar bg-warning pt-1" style="width:25%"></div>
                   </div>
                   <span class="btn-block text-pale text-xs">25 days left</span>
-                  <b class="d-block text-secondary text-center"><i class="fa text-warning fa-stop-circle-o"></i> $10000 Goal</b>
+                  <b class="d-block text-secondary text-center"><i class="fa text-warning fa-stop-circle-o"></i> $10000
+                    Goal</b>
                 </div>
               </router-link>
             </div>
@@ -190,7 +210,8 @@
                     <div class="bar bg-warning pt-1" style="width:25%"></div>
                   </div>
                   <span class="btn-block text-pale text-xs">25 days left</span>
-                  <b class="d-block text-secondary text-center"><i class="fa text-warning fa-stop-circle-o"></i> $10000 Goal</b>
+                  <b class="d-block text-secondary text-center"><i class="fa text-warning fa-stop-circle-o"></i> $10000
+                    Goal</b>
                 </div>
               </router-link>
             </div>
@@ -210,7 +231,8 @@
                     <div class="bar bg-warning pt-1" style="width:25%"></div>
                   </div>
                   <span class="btn-block text-pale text-xs">25 days left</span>
-                  <b class="d-block text-secondary text-center"><i class="fa text-warning fa-stop-circle-o"></i> $10000 Goal</b>
+                  <b class="d-block text-secondary text-center"><i class="fa text-warning fa-stop-circle-o"></i> $10000
+                    Goal</b>
                 </div>
               </router-link>
             </div>
@@ -249,3 +271,52 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+body {
+
+  background-color: #fff !important;
+}
+
+.admin-body {
+  background-color: #fff !important;
+  height: 100vh;
+  overflow: auto;
+}
+
+.section-tab .nav-link {
+  font-size: 20px;
+  font-weight: bold;
+  color: #777;
+  padding: 5px 5px;
+  margin-right: 15px;
+}
+
+.section-tab .nav-link.active {
+  color: #009688;
+}
+
+
+
+/* PENDING DONATIONS */
+.approval-item {
+  display: block;
+  background-color: #FFF;
+  border-radius: 0 0 30px 30px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px #ddd;
+}
+
+.approval-item .img {
+  height: 120px;
+  overflow: hidden;
+}
+
+.warning-progress {
+  background-color: #fcdbc6;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 15px;
+}
+</style>
